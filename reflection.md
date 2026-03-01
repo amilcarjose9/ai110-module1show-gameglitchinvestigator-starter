@@ -4,9 +4,9 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 
 ## 1. What was broken when you started?
 
-- What did the game look like the first time you ran it?
-- List at least two concrete bugs you noticed at the start  
-  (for example: "the secret number kept changing" or "the hints were backwards").
+1. The game's hint system provides reversed guidance. It incorrectly instructs to 'Go LOWER!' when the guess is already lower than the secret number, and 'Go HIGHER!' when the guess is already higher.
+2. After a game ends, clicking the 'New Game' button does not restart the application. The game remains stuck in the completed state until you manually refreshes the web page.
+3. The guess history log does not update in real time. A newly submitted guess does not appear in the history until you submit the next guess.
 
 ---
 
