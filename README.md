@@ -37,3 +37,7 @@ It wrote the code, ran away, and now the game is unplayable.
 ## 🚀 Stretch Features
 
 - [ ] [If you choose to complete Challenge 4, insert a screenshot of your Enhanced Game UI here]
+
+## Tech Fellow Pre-Task Summary
+
+The core concept students need to grasp is Streamlit's stateless, top-to-bottom execution model and how to use `st.session_state` to persist data. Because every interaction restarts the entire script, students are most likely to struggle with unexpected data resets, like the secret number changing mid-game or the visual history lagging. While AI was highly effective at refactoring code and writing pytest suites, it was initially misleading when it interpreted a human bug report too literally and failed to recognize the reversed hint logic. To guide a student without giving away the answer, I would ask them to print `st.session_state` at the very top and bottom of their file so they can visually track exactly when their variables break during a rerun.
